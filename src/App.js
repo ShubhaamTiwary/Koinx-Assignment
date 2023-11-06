@@ -34,6 +34,29 @@ function App() {
         <div id='line'></div>
       </div>
 
+      <div className='row2'>
+        <div className='left'>
+          <div id='text'>
+            <p>Enter purchase price of Crypto</p>
+          </div>
+          <div id='block-div'>
+            <input id='block'>
+            </input>
+          </div>
+        </div>
+        <div className='right'>
+          <div className='inner-right'>
+            <div id='text'>
+              <p>Enter sale price of Crypto</p>
+            </div>
+            <div id='block-div'>
+              <input id='block'>
+              </input>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
