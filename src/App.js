@@ -60,7 +60,7 @@ function App() {
             <p>Financial Year</p>
           </div>
           <div id='block-div'>
-            <select id='block' disabled>
+            <select id='block'>
               <option value="nil" >FY 2023-24</option>
             </select>
           </div>
@@ -70,7 +70,7 @@ function App() {
             <p>Country</p>
           </div>
           <div id='block-div'>
-            <select id='block' disabled>
+            <select id='block'>
               <option value="nil">Australia</option>
             </select>
           </div>
