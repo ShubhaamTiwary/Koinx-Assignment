@@ -73,16 +73,17 @@
   width: 30%;
   margin-left: 10px;
 }
-#block-div{
+
+#block-div {
   display: flex;
   justify-content: space-between;
-  justify-content: center;
+  /* justify-content: center; */
   width: 70%;
   height: 40px;
 }
 
 
-#block{
+#block {
   background-color: rgb(239, 242, 245);
   font-family: Inter;
   font-size: 18px;
@@ -93,50 +94,94 @@
   color: #0F1629;
   border-radius: 12px;
   margin-left: 8px;
-  height:100%;
+  height: 100%;
   width: 100%;
   text-align: left;
   padding-left: 20px;
 }
 
-#line{
+#block-rate {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 10px;
+}
+
+
+#line {
   width: 100%;
   border-bottom: 1px solid #C9CFDD99;
   height: 1px;
 }
 
 
-.row2 .left{
+.row2 .left {
   flex-direction: column;
 }
 
-.row2 #block{
+.row2 #block {
   margin-left: 0px;
 }
 
-.row2 .right{
+.row2 .right {
   justify-content: flex-end;
 }
 
-.inner-right{
+.inner-right {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.row2 #text{
+.row2 #text {
   width: 100%;
 }
-.row2 #block-div{
+
+.row2 #block-div {
   width: 100%;
   height: 50px;
 }
 
-#block{
+#block {
   border: none;
 }
 
 input:focus {
   outline: none;
+  border: none;
+}
+
+#select-box {
+  height: 100%;
+  width: 49%;
+  border: 1px solid #3E424A;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#select-box p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 10px;
+  height: 100%;
+  cursor: pointer;
+}
+
+#tick {
+  display: inline;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+#block::after {
   border: none;
 }
