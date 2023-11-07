@@ -1,6 +1,18 @@
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [inputValue, setInputValue] = useState('$ ');
+
+  const [price,setPrice]=useState(0);
+
+  const handleInputChange = (event) => {
+    const numericValue = event.target.value.replace(/[^0-9]/g, '');
+    setPrice(numericValue);
+    setInputValue('$ ' + numericValue);
+  };
+
+
   return (
     <div className="calculator">
       <div className='heading'>
@@ -40,8 +52,12 @@ function App() {
             <p>Enter purchase price of Crypto</p>
           </div>
           <div id='block-div'>
-            <input id='block'>
-            </input>
+            <input
+              id='block'
+              type="text"
+              value={inputValue}
+              onChange={handleInputChange}
+            />
           </div>
         </div>
         <div className='right'>
@@ -51,6 +67,7 @@ function App() {
             </div>
             <div id='block-div'>
               <input id='block'>
+
               </input>
             </div>
           </div>
