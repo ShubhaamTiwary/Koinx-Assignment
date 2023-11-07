@@ -244,3 +244,49 @@ input:focus {
 #block::after {
   border: none;
 }
+
+@media (max-width: 768px) {
+  .calculator{
+    width: 98%;
+    justify-content: center;
+  }
+  .row2{
+    display: block;
+  }
+  .left{
+    display: block;
+    width: 100%;
+    padding-left: 0%;
+  }
+  .row #block-div{
+    width: 100%;
+  }
+  .row #block{
+    width: 100%;
+    margin-left: 0;
+  }
+  #text{
+    width: 100%;
+  }
+  .right{
+    display: block;
+    width: 100%;
+    padding-left:0%;
+  }
+  #text{
+    margin-left: 0%;
+  }
+  .row2 .right{
+    justify-content: left;
+    margin-left: 0px;
+  }
+  .block-div-end-right{
+    margin-top: 10px;
+  }
+  .left{
+    margin-bottom: 4vh;
+  }
+  .row{
+    margin-bottom: 1vh;
+  }
+}
